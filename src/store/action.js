@@ -1,6 +1,6 @@
 export const fetchProduct = () => {
   return (dispatch, getState) => {
-    fetch("https://6245aa446b7ecf057c226ee2.mockapi.io/products")
+    fetch("https://6247d3b64bd12c92f4041c17.mockapi.io/products/")
     .then(response => response.json())
     .then(data => {
       const action = {
