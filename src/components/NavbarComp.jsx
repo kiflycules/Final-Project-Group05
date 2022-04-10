@@ -1,7 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping  } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 
 function NavbarComp() {
@@ -28,26 +28,26 @@ function NavbarComp() {
 
   return (
     <Navbar collapseOnSelect expand="lg">
-      <Navbar.Brand onClick={() => movePage("/")}>FooS.</Navbar.Brand>
+      <Navbar.Brand onClick={() => movePage("/")} style={{ cursor: "pointer" }}>FooS.</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link>Beranda</Nav.Link>
-          <Nav.Link>Menu</Nav.Link>
+          <Nav.Link onClick={() => movePage("/")}>Beranda</Nav.Link>
+          <Nav.Link onClick={() => movePage("/menu")}>Menu</Nav.Link>
         </Nav>
         {
           checkLogin()
           ? <Nav>
               <Nav.Link onClick={() => movePage("/cart")}>
                   {cart?.length ? cart?.length : ''}
-                <FontAwesomeIcon icon={faCartPlus} style={{ marginLeft: '5px' }}  />
+                <FontAwesomeIcon icon={faCartShopping } style={{ marginLeft: '5px' }}  />
               </Nav.Link>
               <Nav.Link onClick={() => logout()}>Logout</Nav.Link>
             </Nav>
           : <Nav>
               <Nav.Link onClick={() => movePage("/cart")}>
                 {cart?.length ? cart?.length : '' }
-                <FontAwesomeIcon icon={faCartPlus} style={{ marginLeft: '5px' }} />
+                <FontAwesomeIcon icon={faCartShopping } style={{ marginLeft: '5px' }} />
               </Nav.Link>
               <Nav.Link onClick={() => movePage("/login")}>Masuk</Nav.Link>
               <Nav.Link onClick={() => movePage("/register")}>Daftar</Nav.Link>

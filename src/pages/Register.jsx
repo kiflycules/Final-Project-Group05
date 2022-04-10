@@ -63,7 +63,7 @@ function RegisterPage() {
       if (form.password && form.confirmPassword && form.password === form.confirmPassword) {
         console.log(form)
         // tinggal panggil BE untuk simpan data form register
-        fetch('https://6245aa446b7ecf057c226ee2.mockapi.io/users', {
+        fetch('https://6247d3b64bd12c92f4041c17.mockapi.io/users', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -94,18 +94,18 @@ function RegisterPage() {
       <div className="row row-cols-2">
         <div>
           <img
-            src="https://res.cloudinary.com/dxdgvvdwi/image/upload/v1648729302/Ilustration/undraw_my_password_re_ydq7_d1bdf0.svg"
+            src="https://res.cloudinary.com/skilvul/image/upload/v1648863713/assets%20img/project-5-final/undraw_mobile_login_re_9ntv_qnx7yn.svg"
             width="100%"
             height="70%"
             alt="img-login"
           />
         </div>
         <div>
-          <h1 className="text-center mb-3">Register</h1>
+          <h1 className="text-center mb-3">Daftar</h1>
           <Form onSubmit={(e) => onSubmit(e)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" value={form.email} onChange={(e) => changeEmail(e)}/>
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Masukin email" value={form.email} onChange={(e) => changeEmail(e)}/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -114,18 +114,18 @@ function RegisterPage() {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Confirm Password</Form.Label>
+              <Form.Label>Konfirmasi Password</Form.Label>
               <Form.Control type="password" placeholder="Password" value={form.confirmPassword} onChange={(e) => changeConfirmPassword(e)} />
               {
                 isPassMatch
                 ? <div></div>
-                : <div style={{ color: 'red', fontStyle: 'italic' }} > Password doesn't match !</div>
+                : <div style={{ color: 'red', fontStyle: 'italic' }} > Password tidak sama !!</div>
               }
             </Form.Group>
 
             <div className="d-flex justify-content-center">
               <Button variant="primary" type="submit">
-                Sign Up
+                Daftar
               </Button>
             </div>
           </Form>
@@ -139,7 +139,7 @@ function RegisterPage() {
           }}
             onClick={() => navigate("/login")}
           >
-            Have an account ? Login here !
+            Sudah punya akun ? Masuk 
           </div>
         </div>
       </div>

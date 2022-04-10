@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProduct, addToCart } from "../store/action";
@@ -16,7 +16,7 @@ function Products({ sumProduct }) {
   
   useEffect(async () => {
     await dispatch(fetchProduct())
-    // fetch("https://6245aa446b7ecf057c226ee2.mockapi.io/products")
+    // fetch("https://6247d3b64bd12c92f4041c17.mockapi.io/products")
     //   .then((response) => response.json())
     //   .then((data) => {
     //     // console.log(data);
@@ -41,7 +41,7 @@ function Products({ sumProduct }) {
 
   const goDetail = (id) => {
     navigate("/product/" + id);
-    // /product/1, /product/2
+    // misalnya product/1, /product/2
   };
 
   const checkSoldout = (product) => {
@@ -95,7 +95,7 @@ function Products({ sumProduct }) {
                           dispatch(addToCart(product))
                         }
                       >
-                        <FontAwesomeIcon icon={faCartPlus} />
+                        <FontAwesomeIcon icon={faCartShopping } />
                       </div>
                   
                   }

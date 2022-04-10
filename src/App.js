@@ -10,6 +10,7 @@ import DetailProduct from "./pages/DetailProduct";
 import CartPage from "./pages/Cart";
 import CheckoutPage from "./pages/Checkout";
 import { RequireAuth } from "./guard";
+import MenuPage from "./pages/MenuPage";
 
 export default function App() {
   const checkLogin = () => {
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/register" element={<RegisterPage />}></Route>
         <Route path="/products" element={<ProductsPage />}></Route>
+        <Route path="/menu" element={<MenuPage />}></Route>
         <Route path="/product/:id" element={<DetailProduct />}></Route>
         <Route path="/cart" element={<CartPage />}></Route>
         <Route path="/checkout" element={
