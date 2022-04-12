@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Row, Col} from "react-bootstrap"
+// import { Container, Row, Col} from "react-bootstrap"
+import Products from '../components/Products'
 
 function MenuPage (){
     return (
@@ -8,14 +9,8 @@ function MenuPage (){
             paddingTop: "6px",
             cursor: "pointer"
         }}>
-            <Container>
-                <Row>
-                    <Col><strong>Makanan</strong></Col>
-                    <Col><strong>Minuman</strong></Col>
-                    <Col><strong>Cemilan</strong></Col>
-                    <Col><strong>Oleh-Oleh</strong></Col>
-                </Row>
-            </Container>
+            <h1 style={{ margin: "30px 0", textAlign: "center" }}> Menu </h1>
+            <Products />
         </div>
     )
 }

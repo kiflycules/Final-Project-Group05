@@ -1,12 +1,14 @@
 import React from "react";
 import Products from "../components/Products";
-import MenuPage from "./MenuPage";
+// import MenuPage from "./MenuPage";
+// import ListCategory from "../components/ListCategory";
 
 function ProductsPage() {
   return (
     <div>
-      <MenuPage />
-      <h1 style={{ margin: "30px 0", textAlign: "center" }}> Products </h1>
+      {/* <ListCategory /> */}
+      {/* <MenuPage /> */}
+      <h1 style={{ margin: "30px 0", textAlign: "center" }}> Menu </h1>
       <Products />
     </div>
   );

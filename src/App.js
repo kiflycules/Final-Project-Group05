@@ -11,6 +11,7 @@ import CartPage from "./pages/Cart";
 import CheckoutPage from "./pages/Checkout";
 import { RequireAuth } from "./guard";
 import MenuPage from "./pages/MenuPage";
+import Footer from "./pages/Footer";
 
 export default function App() {
   const checkLogin = () => {
@@ -38,6 +39,7 @@ export default function App() {
           </RequireAuth>
         }></Route>
       </Routes>
+      <Footer />
     </Container>
   );
 }
