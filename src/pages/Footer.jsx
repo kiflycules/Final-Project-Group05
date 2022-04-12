@@ -1,43 +1,53 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 
-export default function Footer() {
+function Footer() {
+    const navigate = useNavigate()
     return (
-        <section class="footer">
+        <div className="main-footer">
+            <div className="container">
+                <div className="row">
+                    {/* column 1 */}
+                    <div className="col">
+                        <h4 className="d-flex justify-content-center">Tentang Kami</h4>
+                        <ul>
+                            Kenapa Belanja di <strong>FooS.</strong>
+                        </ul>
+                    </div>
+                    {/* column 2 */}
+                    <div className="col">
+                        <h4 className="d-flex justify-content-center">Informasi</h4>
+                        <ul>
+                            (+62) 823 3945 6907
+                        </ul>
+                        <ul>foodofsumbawa@gmail.com</ul>
+                    </div>
+                    {/* column 3 */}
+                    <div className="col">
+                        <h4 className="d-flex justify-content-center">Alamat</h4>
+                        <ul>Jln. Garuda 148 Sumbawa Besar, LEMPEH, Kec. Sumbawa</ul>
+                        <ul>Sumbawa Prov. Nusa Tenggara Barat</ul>
+                        <ul>Indonesia</ul>
+                    </div>
 
-            <div class="box-container">
-                <div class="box">
-                    <h3>Tentang Kami</h3>
-                    <a href="https://www.blogger.com/blog/post/edit/preview/4328767514894387183/3488947359705457018">Kenapa Belanja di FooS. ?</a>
-                </div>
+                    {/* column 4 */}
+                    <div className="col">
+                        <h4 className="d-flex justify-content-center">Ikuti Kami</h4>
+                        <ul>Instagram | Facebook | Twitter</ul>
+                    </div>
 
-
-                <div class="box">
-                    <h3>Lokasi</h3>
-                    <a href="#">Sumbawa</a>
-                    <a href="#">Taliwang</a>
-                    <a href="#">Mataram</a>
+                    
                 </div>
-                
-                <div class="box">
-                    <h3>Informasi</h3>
-                    <a href="#">082339456907</a>
-                    <a href="#">kiflyfcb7@gmail.com</a>
-                    <a href="#">Sumbawa, Indonesia - 14037</a>
-                </div>
-        
-                <div class="box">
-                    <h3>Ikuti Kami</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linkedin</a>
-                </div>
-        
+                    <hr />
             </div>
-    
-            <div class="credit"> Copyright @ 2022 by <span class="fas fa-utensils"></span> FooS. </div>
-    
-        </section>
-  
+            <div className="d-flex justify-content-center">
+                <p className="d-flex justify-content-center" >
+                    Copyright &copy; {new Date().getFullYear()} by   <strong> FooS.</strong>
+                </p>
+
+            </div>
+        </div>
     )
 }
+
+export default Footer

@@ -9,6 +9,7 @@ function MenuPage (){
             paddingTop: "6px",
             cursor: "pointer"
         }}>
+            <hr />
             <h1 style={{ margin: "30px 0", textAlign: "center" }}> Menu </h1>
             <Products />
         </div>

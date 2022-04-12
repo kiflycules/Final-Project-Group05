@@ -16,8 +16,9 @@ function HomePage() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Menu Spesial</h3>
+            <h1>Ayam Bakar Taliwang</h1>
+            <p>asakan yang di wariskan turun temurun dalam keluarga daerah Sumbawa</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -28,8 +29,9 @@ function HomePage() {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Menu Spesial</h3>
+            <h1>Singang</h1>
+            <p>Masakan yang di wariskan turun temurun dalam keluarga daerah Sumbawa</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,13 +42,15 @@ function HomePage() {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Menu Spesial</h3>
+            <h1>Sepat</h1>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Masakan yang di wariskan turun temurun dalam keluarga daerah Sumbawa
             </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <hr />
       <h1 style={{ margin: "30px 0", textAlign: "center" }}> Menu </h1>
       <Products sumProduct={3} />
       <div style={{ margin: "30px 0", textAlign: "center" }}>

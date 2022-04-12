@@ -84,23 +84,23 @@ function CheckoutPage () {
           <Card style={{ padding: '10px' }} >
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter Name" value={form.name} onChange={e => onChangeForm(e, 'name')} />
+                <Form.Label>Nama</Form.Label>
+                <Form.Control type="text" placeholder="Masukin Nama" value={form.name} onChange={e => onChangeForm(e, 'name')} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Telp Number</Form.Label>
-                <Form.Control type="text" placeholder="Enter Telp Number"  value={form.telp} onChange={e => onChangeForm(e, 'telp')}  />
+                <Form.Label>Nomor Telp</Form.Label>
+                <Form.Control type="text" placeholder="Masukin Nomor Telp"  value={form.telp} onChange={e => onChangeForm(e, 'telp')}  />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Address</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Enter Address"  value={form.address} onChange={e => onChangeForm(e, 'address')}  />
+                <Form.Label>Alamat</Form.Label>
+                <Form.Control as="textarea" rows={3} placeholder="Masukin Alamat"  value={form.address} onChange={e => onChangeForm(e, 'address')}  />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Notes</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Enter Notes"  value={form.notes} onChange={e => onChangeForm(e, 'notes')} />
+                <Form.Label>Catatan</Form.Label>
+                <Form.Control as="textarea" rows={3} placeholder="Catatan"  value={form.notes} onChange={e => onChangeForm(e, 'notes')} />
               </Form.Group>
             </Form>
           </Card>
@@ -112,19 +112,19 @@ function CheckoutPage () {
           </Card.Header>
           <Card.Body>
             <div className="d-flex my-2">
-              <div style={{ width: '20%'}}>Name</div>
+              <div style={{ width: '20%'}}>Nama</div>
               <div style={{ width: '80%'}}>: {form.name}</div>
             </div>
             <div className="d-flex my-2">
-              <div style={{ width: '20%'}}>Telp Number</div>
+              <div style={{ width: '20%'}}>Nomor Telp</div>
               <div  style={{ width: '80%'}}>: {form.telp}</div>
             </div>
             <div className="d-flex my-2">
-              <div style={{ width: '20%'}}>Address</div>
+              <div style={{ width: '20%'}}>Alamat</div>
               <div  style={{ width: '80%'}}>: {form.address}</div>
             </div>
             <div className="d-flex my-2">
-              <div style={{ width: '20%'}}>Notes</div>
+              <div style={{ width: '20%'}}>Catatan</div>
               <div  style={{ width: '80%'}}>: {form.notes}</div>
             </div>
             <div className="d-flex mt-2 mb-4">

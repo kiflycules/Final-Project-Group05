@@ -70,8 +70,8 @@ function CartPage () {
           <Card style={{ margin: '10px 0' }}>
             <Card.Header>Total</Card.Header>
             <Card.Body>
-              <Card.Text>Total Products : {totalProduct()}</Card.Text>
-              <Card.Title>Total Price : {total} </Card.Title>
+              <Card.Text>Jumlah Pesanan : {totalProduct()}</Card.Text>
+              <Card.Title>Total Harga : {total} </Card.Title>
             </Card.Body>
             <div style={{  display: 'flex', justifyContent: 'end', margin: '10px' }}>
               <Button disabled={cart?.length ? false : true} onClick={() => navigate('/checkout')} >Checkout</Button>
