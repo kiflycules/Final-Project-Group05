@@ -12,6 +12,7 @@ import CheckoutPage from "./pages/Checkout";
 import { RequireAuth } from "./guard";
 import MenuPage from "./pages/MenuPage";
 import Footer from "./pages/Footer";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   const checkLogin = () => {
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/menu" element={<MenuPage />}></Route>
         <Route path="/product/:id" element={<DetailProduct />}></Route>
         <Route path="/cart" element={<CartPage />}></Route>
+        <Route path="/aboutus" element={<AboutUs />}></Route>
         <Route path="/checkout" element={
           <RequireAuth>
             <CheckoutPage />

@@ -51,7 +51,7 @@ function HomePage() {
         </Carousel.Item>
       </Carousel>
       <hr />
-      <h1 style={{ margin: "30px 0", textAlign: "center" }}> Menu </h1>
+      <h1 style={{ margin: "30px 0", textAlign: "center" }}> <strong>Menu</strong> </h1>
       <Products sumProduct={3} />
       <div style={{ margin: "30px 0", textAlign: "center" }}>
         <Button onClick={() => navigate("/products")}>
